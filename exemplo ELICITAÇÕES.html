@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Escolha o seu cenário</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 2px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    fieldset {
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    .option {
+      width: 25%;
+      border-radius: 10px;
+      border-style: solid;
+      border-width: thin;
+      padding: 20px;
+      position: relative;
+      margin: 0;
+      display: block;
+      cursor: pointer;
+    }
+
+    .option input {
+      display: none;
+    }
+
+    .option label {
+      display: block;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .option h3 {
+      margin: 0;
+    }
+
+    .option p {
+      margin: 10px 0;
+    }
+
+      .circle {
+          width: 300px;
+        }
+
+      #circulo1 {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          background-size: 100% 100%;
+          background-color: rgba(83, 240, 195, 0.61);
+          margin: 0 auto;
+        
+        }
+
+        #circulo2 {
+          width: 200px;
+            height: 100px;
+            border-bottom: solid rgb(211, 218, 211);
+            border-width: 100px;
+            border-radius: 200px;
+            background-color: rgba(83, 240, 195, 0.61);
+            margin-top: -2px; /* Adjust this value to fit your design */
+            position: relative;
+            margin: 0 auto;
+        }
+        button[type="submit"] {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M 10 50 L 90 50 M 70 30 L 90 50 L 70 70' fill='none' stroke='white' stroke-width='10'/%3E%3C/svg%3E"); /* Adicionado esta linha */
+          background-color: rgb(149, 153, 149); /* Adicionado esta linha */
+          background-repeat: no-repeat; /* Adicionado esta linha */
+          background-position: center; /* Adicionado esta linha */
+          background-size: 30px 50px; /* Adicionado esta linha */
+          border: none; /* Adicionado esta linha */
+          border-radius: 5px; /* Adicionado esta linha */
+          width: 50px; /* Adicionado esta linha */
+          height: 25px; /* Adicionado esta linha */
+          color: transparent; /* Adicionado esta linha */
+          margin-left: auto;
+          display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+  <div class="container">
+      <h2>Escolha o seu cenário:</h2>
+      <p>Se você investiu $1000, o que você ficaria mais confortável em ver ao verificar como seus investimentos estão indo?:</p>
+      <form>
+          <fieldset>
+              <div class="option">
+                  <input type="radio" id="a" name="investment" value="a">
+                  <label for="a">
+                      <h3>INVESTIMENTO A</h3>
+                      <br />
+                      <p>Ganhar com certeza</p>
+                      <br />
+                      <div class="circle" id="circulo1">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                      <b>+ $500</b>
+                    </div>
+                  
+              </div>
+              <div class="option">
+                  <input type="radio" id="b" name="investment" value="b">
+                  <label for="b">
+                      <h3>INVESTIMENTO B</h3>
+                      <br />
+                      <p style="text-align: left;"><b>50%</b> chance de ganhar<br /><b>50%</b> chance de não ter ganho</p>
+                      <br />
+                      <div class="circle"></div>
+                      <div id="circulo2">
+                        <br />
+                        <br />
+                        <br />
+                        <b>+ $1000</b>
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                       <b>Sem ganho</b>
+                    </div>
+                  </label>
+              </div>
+          </fieldset>
+          <button style="text-align: right;"type="submit">enviar</button>
+      </form>
+  </div>
+</body>
+
+</html>

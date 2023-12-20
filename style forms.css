@@ -1,0 +1,131 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #eceef1;
+  font-size: 1.6rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+h1 {
+  color: #4c4c4c;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+a {
+  color: #0077c5;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.line-h {
+  line-height: 1.3;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-container {
+  margin: 0 auto;
+}
+
+
+/* CUSTOM BUTTOM */
+
+
+
+/* Main */
+
+.main-container {
+  width: 28%;
+  background-color: #fff;
+  border: 0.1rem solid #c7c7c7;
+  padding: 1.5rem 2.5rem;
+  border-bottom: none;
+}
+
+.account-intro p {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+}
+
+.form-content {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-element {
+  margin: 0.5rem;
+}
+
+.list-element li {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.list-element li label {
+  text-align: left;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  color: #404040;
+}
+
+.list-element li input {
+  height: 3.3rem;
+}
+
+/* Adicione estas propriedades */
+#submit {
+  background-color: transparent;
+  border: 0.5px solid black; /* borda fina preta */
+  border-radius: 50%; /* cantos totalmente arredondados */
+  width: 30px; /* largura do botão */
+  height: 30px; /* altura do botão */
+  cursor: pointer; /* cursor em forma de mão ao passar sobre o botão */
+  color: #fff;
+  font-size: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#submit svg {
+  margin-left: 0rem;
+}
+
+
+
+
